@@ -79,9 +79,11 @@ Commands that deals with the transaction within the database.
 - SET Transaction - specify characteristics of transaction
 
 ## Example Commands used
-| COMMANDS                                                                | RESULTS                                                                            |
-|-------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| CREATE my-db                                                            | Creates database called my-db                                                      |
-| USE my-db                                                               | Uses data from my-db Databse                                                       |
-| CREATE TABLE film_table  ( flim_name VARCHAR(10) film_type VARCHAR(6) ) | Creates a table named film_table with column names called film_name and film_type. |
-| SP_HELP film_table                                                      | Gives information on the data type of the columns                                  |
+| COMMANDS                                                                   | RESULTS                                                                            |
+|----------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| CREATE my-db                                                               | Creates database called my-db                                                      |
+| USE my-db                                                                  | Uses data from my-db Database                                                       |
+| CREATE TABLE film_table  ( flim_name VARCHAR(10) film_type VARCHAR(6) )    | Creates a table named film_table with column names called film_name and film_type. |
+| SP_HELP film_table                                                         | Gives information on the data type of the columns                                  |
+| ALTER TABLE film_table  ADD release_date                                   | Alters table called film_table and adds a column name release_date                 |
+| INSERTING INTO film_table ( Column1, Column2 ) Values ( 'Value1', Value2 ) | Corresponding values goes into the  corresponding column                           |
